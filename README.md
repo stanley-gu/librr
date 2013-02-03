@@ -11,6 +11,10 @@ A RoadRunner library wrapper.
 3. Install required packages
    `npm install`
 
+# Run Tests
+
+1. `npm test`
+
 # Current Status
 *  Cannot seem to load models currently with an installation under Ubuntu 12.04
    See `rr.js`, when running `rr.librr_c_api('model.sbml')`, the following error occurs:
