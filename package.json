@@ -1,0 +1,11 @@
+{
+  "name": "librr",
+  "description": "a node wrapper for RoadRunner",
+  "version": "0.0.1",
+  "dependencies": {
+    "ref-struct": "0.0.5",
+    "ref-array": "0.0.3",
+    "ref": "~0.1.3",
+    "ffi": "~1.2.3"
+  }
+}
