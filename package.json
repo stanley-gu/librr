@@ -2,6 +2,9 @@
   "name": "librr",
   "description": "a node wrapper for RoadRunner",
   "version": "0.0.1",
+  "scripts": {
+    "test": "node rr.js"
+  },
   "dependencies": {
     "ref-struct": "0.0.5",
     "ref-array": "0.0.3",
