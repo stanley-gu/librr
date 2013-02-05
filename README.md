@@ -27,9 +27,13 @@ To setup the development environment:
    [Vagrant](http://docs.vagrantup.com/v1/docs/getting-started/index.html).
    (VirtualBox is also a requirement).
 2. Build the virtual environment, from the main project directory run these commands:
+````
     $ vagrant box add rr package.box
+
     $ vagrant init rr
+    
     $ vagrant up # this starts the virtual machine containing RoadRunner
+````
 3. SSH into the virtual environment:
     $ vagrant ssh
 4. Find the project files.
