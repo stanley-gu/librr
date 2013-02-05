@@ -11,13 +11,38 @@ A RoadRunner library wrapper.
 3. Install required packages
    `npm install`
 
-# Run Tests
+# Development
+
+## Vagrant
+
+Development can be done using
+[Vagrant](http://docs.vagrantup.com/v1/docs/getting-started/index.html).
+Vagrant provides a virtual development environment (currently using Ubuntu 12.04 32-bit) that already has RoadRunner and its dependencies installed.
+
+The Vagrant package is included in the repository as `package.box`.
+
+To setup the development environment:
+
+1. Install [Vagrant](http://docs.vagrantup.com/v1/docs/getting-started/index.html). (VirtualBox is also a requirement).
+2. Build the virtual environment, from the main project directory run these commands:
+    $ vagrant box add rr package.box
+    $ vagrant init rr
+    $ vagrant up # this starts the virtual machine containing RoadRunner
+3. SSH into the virtual environment:
+    $ vagrant ssh
+
+## Run Tests
 
 1. `npm test`
 
 # Current Status
-*  Cannot seem to load models currently with an installation under Ubuntu 12.04
-   See `rr.js`, when running `rr.librr_c_api('model.sbml')`, the following error occurs:
-   `symbol lookup error: /usr/local/lib/librr_c_api.so: undefined symbol: dnrm2_`
-   `dnrm2_` is found in `clapack.h` 
 
+* `librr_c_api` loads okay, but error occurs during simulation
+
+````
+Loading SBML into simulator
+Processing model: Feedback
+Compiler command:  2>&1 >> compilation.log
+Compile system call returned: 512
+Creating DLL failed..
+````
