@@ -35,7 +35,9 @@ To setup the development environment:
     $ vagrant up # this starts the virtual machine containing RoadRunner
 ````
 3. SSH into the virtual environment:
-    $ vagrant ssh
+
+    `$ vagrant ssh`
+
 4. Find the project files.
     * The project files for RoadRunner and `librr` are located in the home
       directory (`/home/vagrant/rr` and `/home/vagrant/librr`).
