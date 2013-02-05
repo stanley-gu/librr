@@ -5,5 +5,5 @@ console.log(rr.librr_c_api.getVersion());
 console.log(rr.librr_c_api.getlibSBMLVersion());
 console.log(rr.librr_c_api.getWorkingDirectory());
 
-//rr.librr_c_api.loadSBMLFromFile('models/feedback.xml')
-//console.log(rr.librr_c_api.getCurrentSBML())
+rr.librr_c_api.loadSBMLFromFile('/usr/local/models/feedback.xml')
+console.log(rr.librr_c_api.getCurrentSBML())

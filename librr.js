@@ -32,8 +32,6 @@ var RRCCodeHandlePtr = exports.RRCCodeHandlePtr = ref.refType(RRCCodeHandle);
 var RRListItemHandle = exports.RRListItemHandle = voidPtr;
 var RRListItemHandlePtr = exports.RRListItemHandlePtr = ref.refType(RRListItemHandle);
 
-FFI.DynamicLibrary('/usr/local/lib/librr_c_api.so');
-
 exports.librr_c_api = new FFI.Library('librr_c_api', {
     getVersion: [ref.types.CString, []],
     getBuildDate: [ref.types.CString, []],
