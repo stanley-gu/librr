@@ -16,15 +16,13 @@ A RoadRunner library wrapper.
 
 Development can be done using
 [Vagrant](http://docs.vagrantup.com/v1/docs/getting-started/index.html).
-Vagrant provides a virtual development environment (currently using Ubuntu
-12.04 32-bit) that already has RoadRunner and its dependencies installed.
-
-The Vagrant package is included in the repository as `package.box`.
+Vagrant allows you to develop in a virtual environment (virtual machine). A custom built VM (based on Ubuntu
+12.04 32-bit) that already has RoadRunner and its dependencies installed is available.
 
 To setup the development environment:
 
-### Install
-   [Vagrant](http://docs.vagrantup.com/v1/docs/getting-started/index.html).
+### Install Vagrant
+   [Download Vagrant](http://docs.vagrantup.com/v1/docs/getting-started/index.html).
    (VirtualBox is also a requirement).
 ### Build the virtual environment
 
