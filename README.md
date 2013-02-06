@@ -23,10 +23,10 @@ The Vagrant package is included in the repository as `package.box`.
 
 To setup the development environment:
 
-1. Install
+### Install
    [Vagrant](http://docs.vagrantup.com/v1/docs/getting-started/index.html).
    (VirtualBox is also a requirement).
-2. Build the virtual environment.
+### Build the virtual environment
 
 Download the prepared virtual machine image
 [here](https://github.com/stanley-gu/vagrant-librr/archive/master.zip). Unzip
@@ -45,11 +45,11 @@ be mounted at `/vagrant` as a VirtualBox shared folder automatically.
     
     $ vagrant up # this starts the virtual machine containing RoadRunner
 ````
-3. SSH into the virtual environment:
+### SSH into the virtual environment
 
     `$ vagrant ssh`
 
-4. Find the project files.
+### Find the project files
     * The project files for RoadRunner and `librr` are located in the home
       directory (`/home/vagrant/rr` and `/home/vagrant/librr`).
 
