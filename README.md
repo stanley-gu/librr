@@ -26,7 +26,13 @@ To setup the development environment:
 1. Install
    [Vagrant](http://docs.vagrantup.com/v1/docs/getting-started/index.html).
    (VirtualBox is also a requirement).
-2. Build the virtual environment, from the main project directory run these commands:
+2. Build the virtual environment.
+
+Download the prepared virtual machine image
+[here](https://github.com/stanley-gu/vagrant-librr/archive/master.zip). Unzip
+and locate `package.json`.
+
+From the main project directory run these commands:
 ````
     $ vagrant box add rr package.box
 
