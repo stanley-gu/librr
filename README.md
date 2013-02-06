@@ -30,13 +30,18 @@ To setup the development environment:
 
 Download the prepared virtual machine image
 [here](https://github.com/stanley-gu/vagrant-librr/archive/master.zip). Unzip
-and locate `package.json`.
+and locate `package.box`.
 
-From the main project directory run these commands:
+Add the VM to Vagrant with:
 ````
     $ vagrant box add rr package.box
+````
 
-    $ vagrant init rr
+Find a directory, or make a new one, to initialize the box. This directory will 
+be mounted at `/vagrant` as a VirtualBox shared folder automatically. 
+
+````
+    $ vagrant init rr # initializes directory for use with Vagrant and the librr box
     
     $ vagrant up # this starts the virtual machine containing RoadRunner
 ````
