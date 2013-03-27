@@ -5,6 +5,7 @@
   "scripts": {
     "test": "node rr.js"
   },
+  "main": "librr.js",
   "dependencies": {
     "ref-struct": "0.0.5",
     "ref-array": "0.0.3",
