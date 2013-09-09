@@ -1,12 +1,14 @@
-var rr = require('./librr.js');
+var rr = require('./librr.js').librrc_api;
 
-console.log(rr.librr_c_api.getBuildTime());
-console.log(rr.librr_c_api.getVersion());
-console.log(rr.librr_c_api.getlibSBMLVersion());
-console.log(rr.librr_c_api.getWorkingDirectory());
+console.log(rr.getAPIVersion());
 
-rr.librr_c_api.loadSBMLFromFile('/usr/local/models/feedback.xml')
-console.log(rr.librr_c_api.getCurrentSBML())
-console.log('number of floating species: ' + rr.librr_c_api.getNumberOfFloatingSpecies())
-var results = rr.librr_c_api.simulate();
-console.log('results are: \n' + rr.librr_c_api.resultToString(results))
+var myrr = rr.createRRInstance();
+rr.setTempFolder(myrr, '/tmp');
+console.log(rr.getTempFolder(myrr));
+var currentDir = rr.getWorkingDirectory();
+console.log(currentDir);
+rr.loadSBMLFromFile(myrr, currentDir + '/feedback.xml');
+console.log(rr.getCurrentSBML(myrr));
+console.log('number of floating species: ' + rr.getNumberOfFloatingSpecies(myrr));
+var results = rr.simulate(myrr);
+console.log('results are: \n' + rr.rrDataToString(results));
